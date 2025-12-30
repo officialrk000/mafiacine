@@ -1,54 +1,20 @@
-# Durable Objects Starter
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+</div>
 
-[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/cloudflare/templates/tree/main/hello-world-do-template)
+# Run and deploy your AI Studio app
 
-<!-- dash-content-start -->
+This contains everything you need to run your app locally.
 
-This is a [Durable Object](https://developers.cloudflare.com/durable-objects/) starter template. It comes with a `sayHello` method that returns `Hello World!`.
+View your app in AI Studio: https://ai.studio/apps/drive/1E5RbvMf8C5gR9QZkDql5KswRgPHfYo0P
 
-<!-- dash-content-end -->
+## Run Locally
 
-Outside of this repo, you can start a new project with this template using [C3](https://developers.cloudflare.com/pages/get-started/c3/) (the `create-cloudflare` CLI):
+**Prerequisites:**  Node.js
 
-```bash
-npm create cloudflare@latest -- --template=cloudflare/templates/hello-world-do-template
-```
 
-## Getting Started
-
-First, run:
-
-```bash
-npm install
-# or
-yarn install
-# or
-pnpm install
-# or
-bun install
-```
-
-Then run the development server (using the package manager of your choice):
-
-```bash
-npm run dev
-```
-
-Open [http://localhost:8787](http://localhost:8787) with your browser to see the result.
-
-You can start editing the project by modifying `src/index.ts`.
-
-## Deploying To Production
-
-| Command             | Action                                |
-| :------------------ | :------------------------------------ |
-| `npm run deploy`    | Deploy your application to Cloudflare |
-| `npm wrangler tail` | View real-time logs for all Workers   |
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Durable Objects](https://developers.cloudflare.com/durable-objects/) - learn about Durable Objects
-
-Your feedback and contributions are welcome!
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`
